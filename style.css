@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+   body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .bg-overlay {
+    background: url("/assets/comingsoon.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  
+  .logo-img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Head and Body Text */
+  .head-text {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+  .body-text {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    color: #c4c4c4;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .bg-overlay {
+      background-attachment: scroll;
+      padding: 20px;
+    }
+  
+    .logo-img {
+      max-width: 220px; /* Make logo larger on small screens */
+    }
+  
+    .footer-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .footer-text {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+  
